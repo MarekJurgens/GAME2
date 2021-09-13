@@ -24,7 +24,8 @@ public class GAME2 {
         int number = random.nextInt(9-0+1)+0;
         System.out.print("Программа запомнила число от 0 до 9, угадай! ");
     //    for(int i = 0; i < 3; i++){
-        while(true){
+        //while(true){
+        do{
             int userNumber = scanner.nextInt();
             if(number == userNumber){
                 System.out.println("Ура! Ты выиграл!!!");
@@ -38,7 +39,7 @@ public class GAME2 {
                 }
             } 
             attempt++;
-        }
+        }while(true);
     
     }
     
